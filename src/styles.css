@@ -1,0 +1,193 @@
+/* styles.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #f9f9f9;
+  --text-color: #333333;
+  --primary-color: #3b82f6; /* Blue */
+  --secondary-color: #000c66; /* Navy Blue */
+  --accent-color: #7ec8e3; /* Baby Blue */
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* Body font */
+  font-size: 1rem; /* 16px */
+  line-height: 1.5; /* 24px */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Headings */
+h1 {
+  font-family: "Oswald", sans-serif; /* Title font */
+  font-size: 2.5rem; /* 40px */
+  font-weight: 700; /* Bold */
+  color: var(--primary-color);
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem; /* 32px */
+  font-weight: 600; /* Semi-bold */
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.75rem; /* 28px */
+  font-weight: 500; /* Medium */
+}
+
+/* Links */
+
+a {
+  position: relative; /* Needed for positioning the pseudo-element */
+  display: inline-block; /* Ensure the element is treated as a block for width */ /* Customize a color */
+  text-decoration: none; /* Remove default underline */
+  font-size: 1rem;
+  color: white;
+}
+
+a::after {
+  content: ""; /* Create a pseudo-element */
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Start from the left */
+  bottom: 0; /* Position at the bottom */
+  width: 100%; /* Full width */
+  height: 2px; /* Thickness of the underline */
+  background-color: #ffffff; /* Underline color */
+  transform: scaleX(0); /* Start with 0 width */
+  transition: transform 0.7s ease; /* Smooth transition */
+}
+
+a:hover::after {
+  transform: scaleX(1); /* Expand to full width on hover */
+}
+
+.small-text {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 20px; /* Adjust padding for size */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Make text bold */
+  color: white; /* Text color */
+  background-color: #007bff; /* Primary color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Transition effects */
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  border-radius: 0.25rem;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Focus effect for accessibility */
+button:focus {
+  outline: 2px solid #fff; /* Outline for focus */
+  outline-offset: 2px; /* Offset for better visibility */
+}
+
+/* Disabled state */
+button:disabled {
+  background-color: #ccc; /* Gray color */
+  cursor: not-allowed; /* Not-allowed cursor */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* 32px */
+  }
+  h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+  body {
+    font-size: 0.95rem; /* 15px */
+  }
+}
+
+.no-underline {
+  position: static; /* Remove positioning */
+}
+
+.no-underline::after {
+  content: none; /* Remove the pseudo-element */
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ffffff; /* Start with white */
+  }
+  50% {
+    color: #ff0000; /* Change to red */
+  }
+  100% {
+    color: #ffffff; /* Back to white */
+  }
+}
+
+.animated-text {
+  animation: colorChange 1.5s infinite; /* Animation lasts 1.5 seconds and repeats */
+}
+
+.typing-effect {
+  border-right: 3px solid white; /* Create a cursor effect */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Ensures text is hidden until it types */
+  animation: blink-caret 0.75s step-end infinite; /* Blinking effect */
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white; /* Blink effect for the cursor */
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ffffff; /* Start with white */
+  }
+  50% {
+    color: #ff0000; /* Change to red */
+  }
+  100% {
+    color: #ffffff; /* Back to white */
+  }
+}
+
+.typing-effect {
+  border-right: 3px solid white; /* Create a cursor effect */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Ensures text is hidden until it types */
+  animation: blink-caret 0.75s step-end infinite; /* Blinking effect */
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white; /* Blink effect for the cursor */
+  }
+}
