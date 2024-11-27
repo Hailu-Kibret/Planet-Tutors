@@ -11,12 +11,9 @@ function Footer() {
             About Us
           </h3>
           <p>
-            At Planet Tutors, we are dedicated to providing exceptional tutoring
-            services for students from KG-12 and university levels. Our
-            experienced tutors are committed to helping learners achieve their
-            academic goals through personalized and engaging instruction.
-            Whether you’re looking for support in foundational subjects or
-            advanced coursework, we’re here to guide you every step of the way.
+            At Planet Tutors, we are exceptional team from Addis Ababa
+            University who give home to home or online tutor with a fair price.
+            We give quality tutor from KG-12.
           </p>
         </div>
         <div className="footer-section">
@@ -101,7 +98,7 @@ function Footer() {
               to="https://t.me/we_teach4"
               className="text-gray-400 hover:text-white"
             >
-              @we_teach4
+              @Planet_tutoring
             </Link>
           </p>
         </div>

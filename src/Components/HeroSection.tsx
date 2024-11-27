@@ -1,4 +1,4 @@
-import tutoringImage from "../assets/images/pexels-mikhail-nilov-8923029.jpg";
+import tutoringImage from "../assets/images/hero-image.png";
 import TypingEffect from "./TypingDisplay";
 function HeroSection() {
   return (
@@ -20,7 +20,7 @@ function HeroSection() {
           student. Trust us, we are different!
         </p>
         <button
-          className="text-base px-5 py-2 bg-primary-color text-white rounded cursor-pointer hover:bg-secondary-color"
+          className="button-solid text-base px-5 py-2 bg-primary-color text-white rounded cursor-pointer hover:bg-secondary-color"
           type="submit"
         >
           Get Started
@@ -28,7 +28,7 @@ function HeroSection() {
       </div>
       <div>
         <img
-          className="rounded"
+          className="rounded opacity-90"
           width={650}
           src={tutoringImage}
           alt="hero section image"

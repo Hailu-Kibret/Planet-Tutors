@@ -74,27 +74,39 @@ a:hover::after {
   color: #666;
 }
 
+/* Common button styles */
 button {
   display: inline-block;
-  padding: 12px 20px; /* Adjust padding for size */
-  font-size: 16px; /* Font size */
+  padding: 0.5rem 1rem; /* Padding */
+  font-size: 1rem; /* Font size */
   font-weight: bold; /* Make text bold */
-  color: white; /* Text color */
-  background-color: #007bff; /* Primary color */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
-  text-align: center; /* Center text */
-  text-decoration: none; /* Remove underline */
+  border-radius: 0.25rem; /* Rounded corners */
   cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s; /* Transition effects */
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--primary-color);
-  border-radius: 0.25rem;
+  transition: background-color 0.3s, color 0.3s; /* Transition effects */
 }
 
-/* Hover effect */
-button:hover {
+/* Outlined button styles */
+.button-outlined {
+  color: var(--primary-color); /* Text color */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid var(--primary-color); /* Outlined border */
+}
+
+/* Hover effect for outlined button */
+.button-outlined:hover {
+  background-color: var(--primary-color); /* Fill with primary color */
+  color: white; /* Change text color to white */
+}
+
+/* Solid button styles */
+.button-solid {
+  color: white; /* Text color */
+  background-color: var(--primary-color); /* Solid background color */
+  border: none; /* No border */
+}
+
+/* Hover effect for solid button */
+.button-solid:hover {
   background-color: #0056b3; /* Darker shade on hover */
 }
 

@@ -1,7 +1,7 @@
-import HomeImage from "../assets/images/pexels-mikhail-nilov-8923029.jpg";
-import onlineImage from "../assets/images/pexels-mikhail-nilov-8923029.jpg";
-import mpcImage from "../assets/images/pexels-mikhail-nilov-8923043.jpg";
-import oneImage from "../assets/images/pexels-mikhail-nilov-8923043.jpg";
+// import HomeImage from "../assets/images/pexels-mikhail-nilov-8923029.jpg";
+// import onlineImage from "../assets/images/pexels-mikhail-nilov-8923029.jpg";
+// import mpcImage from "../assets/images/pexels-mikhail-nilov-8923043.jpg";
+// import oneImage from "../assets/images/pexels-mikhail-nilov-8923043.jpg";
 
 function ServicesOverview() {
   return (
@@ -19,14 +19,14 @@ function ServicesOverview() {
       <div className="grid grid-cols-2 gap-4   mx-auto max-w-screen-xl ">
         <div className="  text-center min-h-30  bg-white p-6 rounded-lg shadow  ml-4">
           <h3 className="mb-2">Home to Home Tutoring</h3>
-          <div className="flex justify-center mb-4 md:mb-6 lg:mb-8">
+          {/* <div className="flex justify-center mb-4 md:mb-6 lg:mb-8">
             <img
               src={HomeImage}
               width={220}
               height={220}
               alt="Home to home tutoring "
             />
-          </div>
+          </div> */}
           <p className="mb-4 text-justify">
             Our home tutoring service provides personalized, one-on-one support
             for your children, directly at your location. Our tutors are
@@ -47,14 +47,14 @@ function ServicesOverview() {
         </div>
         <div className="  text-center min-h-30  bg-white p-6 rounded-lg shadow  mr-4">
           <h3 className="mb-2">Online Tutoring</h3>
-          <div className="flex justify-center mb-4 md:mb-6 lg:mb-8">
+          {/* <div className="flex justify-center mb-4 md:mb-6 lg:mb-8 w-full">
             <img
               src={onlineImage}
               width={220}
               height={220}
               alt="Online Tutoring"
             />{" "}
-          </div>
+          </div> */}
 
           <p className="mb-4 text-justify">
             Additionally, we offer online tutoring services, available as
@@ -79,14 +79,14 @@ function ServicesOverview() {
         </div>
         <div className="  text-center min-h-30  bg-white p-6 rounded-lg shadow  ml-4">
           <h3 className="mb-2">MPC MasterClass</h3>
-          <div className="flex justify-center mb-4 md:mb-6 lg:mb-8">
+          {/* <div className="flex justify-center mb-4 md:mb-6 lg:mb-8">
             <img
               src={mpcImage}
               width={220}
               height={220}
               alt="MPC MasterClass"
             />
-          </div>
+          </div> */}
 
           <p className="mb-4 text-justify">
             We also offer a specialized service called MPC MasterClass, an
@@ -108,14 +108,14 @@ function ServicesOverview() {
         </div>
         <div className="  text-center min-h-30  bg-white p-6 rounded-lg shadow  mr-4">
           <h3 className="mb-2">One Time Service</h3>
-          <div className="flex justify-center mb-4 md:mb-6 lg:mb-8">
+          {/* <div className="flex justify-center mb-4 md:mb-6 lg:mb-8">
             <img
               src={oneImage}
               width={220}
               height={220}
               alt="One time service"
             />
-          </div>
+          </div> */}
 
           <p className="mb-4 text-justify">
             Lastly, we offer a one-time tutoring service designed to help

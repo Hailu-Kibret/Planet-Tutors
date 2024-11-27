@@ -12,9 +12,12 @@ function Header() {
           </Link>
         </div>
         <div>
-          <ul className="items-center flex justify-between gap-8 ">
+          <ul className="items-center flex justify-between gap-8 pl-12 ">
             <li>
-              <Link to="/Services">Services</Link>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/Services">Our Services</Link>
             </li>
             <li>
               <Link to="/About">About Us</Link>
@@ -25,18 +28,20 @@ function Header() {
             <li>
               <Link to="/Contact">Contact</Link>
             </li>
-            <li className="ml-16">
-              <button
-                type="submit"
-                className="flex justify-center bg-blue-500 p-2 rounded "
-              >
-                <Link className="text-white no-underline" to="/Signin">
-                  Sign in
-                </Link>
-              </button>
+            <li>
+              <Link to="/Resources">Resources</Link>
             </li>
           </ul>
         </div>
+
+        <button
+          type="submit"
+          className="flex justify-center bg-blue-500 p-2 rounded button-solid "
+        >
+          <Link className="text-white no-underline " to="/Signin">
+            Sign in
+          </Link>
+        </button>
       </div>
       <div className="bg-tealCustom text-center">
         <h3 className="text-lg font-bold text-white p-2">

@@ -11,29 +11,82 @@ function Contact() {
           We'd love to hear from you! Reach out to us using the information
           below.
         </p>
-        <div className="flex flex-col md:flex-row justify-center">
-          <div className="contact-info mx-4 mb-6 md:mb-0">
-            <h3 className="text-lg font-semibold mb-2">Email</h3>
-            <p>
-              <a
-                href="mailto:info@example.com"
-                className="text-blue-500 no-underline"
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          {/* Left Column: Contact Information */}
+          <div className="contact-info w-full md:w-1/2 mx-4 mb-6 p-6 bg-white shadow-md rounded-lg">
+            <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
+            <div className="mb-4">
+              <h4 className="font-semibold">Email:</h4>
+              <p className="text-gray-700">
+                <a
+                  href="mailto:planet.tutors@gmail.com"
+                  className="text-blue-500 hover:underline"
+                >
+                  planet.tutors@gmail.com
+                </a>
+              </p>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-semibold">Phone:</h4>
+              <p className="text-gray-700">
+                <a
+                  href="tel:+1234567890"
+                  className="text-blue-500 hover:underline"
+                >
+                  09-39-21-49-32
+                </a>
+              </p>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-semibold">Address:</h4>
+              <p className="text-gray-700">4 Kilo, Addis Ababa, Ethiopia</p>
+            </div>
+          </div>
+
+          {/* Right Column: Contact Form */}
+          <div className="contact-form w-full md:w-1/2 mx-4 mb-6 p-6 bg-white shadow-md rounded-lg">
+            <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
+            <form>
+              <div className="mb-4">
+                <label className="block text-left mb-1" htmlFor="name">
+                  Name
+                </label>
+                <input
+                  className="w-full border rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  type="text"
+                  id="name"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-left mb-1" htmlFor="email">
+                  Email
+                </label>
+                <input
+                  className="w-full border rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  type="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-left mb-1" htmlFor="message">
+                  Message
+                </label>
+                <textarea
+                  className="w-full border rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button
+                className="bg-blue-600 text-white rounded py-2 px-4 hover:bg-blue-700 transition"
+                type="submit"
               >
-                planet.tutors@gmail.com
-              </a>
-            </p>
-          </div>
-          <div className="contact-info mx-4 mb-6 md:mb-0">
-            <h3 className="text-lg font-semibold mb-2">Phone</h3>
-            <p>
-              <a href="tel:+1234567890" className="text-blue-500 no-underline ">
-                09-39-21-49-32
-              </a>
-            </p>
-          </div>
-          <div className="contact-info mx-4 mb-6 md:mb-0">
-            <h3 className="text-lg font-semibold mb-2">Address</h3>
-            <p>4 Kilo, Addis Ababa, Ethiopia</p>
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>

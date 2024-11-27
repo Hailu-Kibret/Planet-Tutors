@@ -12,7 +12,7 @@ function CallToAction() {
           Ready to provide your child with the best tutoring experience? Sign up
           now to get started!
         </p>
-        <button type="submit">
+        <button type="submit" className="button-solid">
           <Link className="no-underline" to="/signup">
             Sign Up Now
           </Link>
