@@ -16,17 +16,6 @@ function Contact() {
           <div className="contact-info w-full md:w-1/2 mx-4 mb-6 p-6 bg-white shadow-md rounded-lg">
             <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
             <div className="mb-4">
-              <h4 className="font-semibold">Email:</h4>
-              <p className="text-gray-700">
-                <a
-                  href="mailto:planet.tutors@gmail.com"
-                  className="text-blue-500 hover:underline"
-                >
-                  planet.tutors@gmail.com
-                </a>
-              </p>
-            </div>
-            <div className="mb-4">
               <h4 className="font-semibold">Phone:</h4>
               <p className="text-gray-700">
                 <a
@@ -34,6 +23,17 @@ function Contact() {
                   className="text-blue-500 hover:underline"
                 >
                   09-39-21-49-32
+                </a>
+              </p>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-semibold">Email:</h4>
+              <p className="text-gray-700">
+                <a
+                  href="mailto:planet.tutors@gmail.com"
+                  className="text-blue-500 hover:underline"
+                >
+                  planet.tutors@gmail.com
                 </a>
               </p>
             </div>
@@ -59,13 +59,13 @@ function Contact() {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-left mb-1" htmlFor="email">
-                  Email
+                <label className="block text-left mb-1" htmlFor="phone">
+                  Phone
                 </label>
                 <input
                   className="w-full border rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  type="email"
-                  id="email"
+                  type="tel"
+                  id="phone"
                   required
                 />
               </div>
@@ -76,7 +76,7 @@ function Contact() {
                 <textarea
                   className="w-full border rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   id="message"
-                  rows="4"
+                  rows={4}
                   required
                 ></textarea>
               </div>

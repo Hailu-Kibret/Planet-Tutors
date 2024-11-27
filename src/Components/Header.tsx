@@ -1,44 +1,86 @@
 import logo from "../assets/images/planet-tutors-high-resolution-logo-transparent (2).png";
 import "../index.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
 function Header() {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       <div className="items-center flex justify-between bg-gray-800 text-white p-10">
         <div>
           <Link className="no-underline" to="/">
-            {" "}
             <img src={logo} width={150} alt="Planet Tutors" />
           </Link>
         </div>
         <div>
-          <ul className="items-center flex justify-between gap-8 pl-12 ">
+          <ul className="items-center flex justify-between gap-8 pl-12">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "border-2 border-white p-2 rounded" : "p-2"
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/Services">Our Services</Link>
+              <NavLink
+                to="/Services"
+                className={({ isActive }) =>
+                  isActive ? "border-2 border-white p-2 rounded" : "p-2"
+                }
+              >
+                Our Services
+              </NavLink>
             </li>
             <li>
-              <Link to="/About">About Us</Link>
+              <NavLink
+                to="/About"
+                className={({ isActive }) =>
+                  isActive ? "border-2 border-white p-2 rounded" : "p-2"
+                }
+              >
+                About Us
+              </NavLink>
             </li>
             <li>
-              <Link to="/Blog">Blog</Link>
+              <NavLink
+                to="/Blog"
+                className={({ isActive }) =>
+                  isActive ? "border-2 border-white p-2 rounded" : "p-2"
+                }
+              >
+                Blog
+              </NavLink>
             </li>
             <li>
-              <Link to="/Contact">Contact</Link>
+              <NavLink
+                to="/Contact"
+                className={({ isActive }) =>
+                  isActive ? "border-2 border-white p-2 rounded" : "p-2"
+                }
+              >
+                Contact
+              </NavLink>
             </li>
             <li>
-              <Link to="/Resources">Resources</Link>
+              <NavLink
+                to="/Resources"
+                className={({ isActive }) =>
+                  isActive ? "border-2 border-white p-2 rounded" : "p-2"
+                }
+              >
+                Resources
+              </NavLink>
             </li>
           </ul>
         </div>
 
         <button
           type="submit"
-          className="flex justify-center bg-blue-500 p-2 rounded button-solid "
+          className="flex justify-center bg-blue-500 p-2 rounded button-solid"
         >
-          <Link className="text-white no-underline " to="/Signin">
+          <Link className="text-white no-underline" to="/Signin">
             Sign in
           </Link>
         </button>

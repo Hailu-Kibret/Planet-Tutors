@@ -11,7 +11,7 @@ function HeroSection() {
         <h2 className="text-blue-600 text-3xl font-semibold my-4   leading-snug mb-4">
           Exceptional tutoring for your child's success!
         </h2>
-        <p className="text-base leading-relaxed mb-7">
+        <p className="text-base leading-relaxed mb-7 text-justify">
           We are a group of exceptional graduate and undergraduate students from
           Addis Ababa University, each scoring at least 550/700 on the entrance
           exam and maintaining a CGPA of 3.5 or higher. Our mission is to

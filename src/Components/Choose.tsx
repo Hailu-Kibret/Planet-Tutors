@@ -7,13 +7,13 @@ function Choose() {
         </h2>
       </div>
 
-      <div className="max-w-screen-xl mx-auto">
+      <div className=" max-w-screen-xl mx-auto">
         <p className="text-lg text-center mb-6">
           Discover the unique advantages that set us apart from other tutoring
           services.
         </p>
 
-        <ul className="grid justify-center gap-4 text-center">
+        <ul className="grid grid-cols-2 justify-center gap-4 text-center">
           <li className="bg-gray-100 p-6 rounded-lg shadow">
             <h3 className="text-xl font-semibold mb-2">Experienced Tutors</h3>
             <p className="text-gray-700">
