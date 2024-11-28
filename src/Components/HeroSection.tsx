@@ -3,7 +3,7 @@ import TypingEffect from "./TypingDisplay";
 
 function HeroSection() {
   return (
-    <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-10 lg:gap-20 pt-12 pb-12 px-5">
+    <div className=" flex flex-col-reverse lg:flex-row justify-center items-center gap-10 lg:gap-20 pt-12 pb-12 px-5">
       {/* Text Section */}
       <div className="w-full lg:w-3/4">
         {/* Typing Effect */}
@@ -38,7 +38,7 @@ function HeroSection() {
       </div>
 
       {/* Image Section */}
-      <div className="w-full lg:w-auto flex justify-center">
+      <div className="w-full z-0 lg:w-auto flex justify-center ">
         <img
           className="rounded opacity-90 max-w-full h-auto"
           src={tutoringImage}

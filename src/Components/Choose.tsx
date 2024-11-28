@@ -1,6 +1,6 @@
 function Choose() {
   return (
-    <section className="py-10 bg-white border border-red-500">
+    <section className="py-10 bg-white ">
       {/* Section Title */}
       <div className="flex justify-center">
         <h2 className="inline-block text-3xl font-bold text-blue-600 text-center mb-6 border-b-4 border-blue-600 pb-2">

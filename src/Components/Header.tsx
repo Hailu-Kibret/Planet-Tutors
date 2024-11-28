@@ -25,9 +25,14 @@ function Header() {
   }, [isMenuOpen]);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
+      <div className="bg-tealCustom text-center w-full fixed-element">
+        <h3 className="text-lg font-bold text-white p-2 ">
+          <span className="animated-text">Call Us Now:</span> 09-39-21-49-32
+        </h3>
+      </div>
       {/* Main Header */}
-      <div className="flex items-center justify-between bg-gray-800 text-white p-6">
+      <div className="flex items-center justify-between bg-gray-800 text-white p-6 mt-8">
         {/* Logo */}
         <div>
           <Link className="no-underline" to="/Home">
@@ -114,7 +119,7 @@ function Header() {
       {/* Mobile Menu */}
       <div
         ref={menuRef}
-        className={`fixed top-0 right-0 w-3/4 h-screen bg-gray-800 text-white p-6 transition-transform transform ${
+        className={`fixed top-6 right-0 w-3/4 h-screen bg-gray-800 text-white p-6 transition-transform transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
         style={{ zIndex: 999 }}
@@ -164,11 +169,6 @@ function Header() {
       </div>
 
       {/* Bottom Banner */}
-      <div className="bg-tealCustom text-center">
-        <h3 className="text-lg font-bold text-white p-2">
-          <span className="animated-text">Call Us Now:</span> 09-39-21-49-32
-        </h3>
-      </div>
     </div>
   );
 }
