@@ -5,8 +5,8 @@ function Footer() {
 
   return (
     <footer className="bg-gray-800 text-white py-8 px-4">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between">
-        <div className="footer-section w-1/3">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start">
+        <div className="footer-section w-full md:w-1/3 text-center md:text-left mb-6 md:mb-0">
           <h3 className="font-bold text-lg mb-4 border-b-2 inline-block">
             About Us
           </h3>
@@ -16,7 +16,8 @@ function Footer() {
             We give quality tutor from KG-12.
           </p>
         </div>
-        <div className="footer-section">
+
+        <div className="footer-section w-full md:w-auto text-center md:text-left mb-6 md:mb-0">
           <h3 className="font-bold text-lg mb-4 border-b-2 inline-block">
             Links
           </h3>
@@ -43,12 +44,16 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="footer-section">
-          <h3 className="font-bold text-lg mb-4 border-b-2 ">Follow Us</h3>
+
+        <div className="footer-section w-full md:w-auto text-center md:text-left mb-6 md:mb-0">
+          <h3 className="font-bold text-lg mb-4 border-b-2 inline-block">
+            Follow Us
+          </h3>
+          <br />
           <Link
             to="https://web.facebook.com/profile.php?id=61564120752449"
             target="_blank"
-            className=" text-gray-400 hover:text-white"
+            className="text-gray-400 hover:text-white"
           >
             Facebook
           </Link>
@@ -70,7 +75,7 @@ function Footer() {
           </Link>
         </div>
 
-        <div className="footer-section">
+        <div className="footer-section w-full md:w-auto text-center md:text-left">
           <h3 className="font-bold text-lg mb-4 border-b-2 inline-block">
             Contact Us
           </h3>
@@ -78,7 +83,7 @@ function Footer() {
             Email:{" "}
             <Link
               to="mailto:planet.tutors@gmail.com"
-              className="text-gray-400 hover:text-white"
+              className="text-gray-400 hover:text-white "
             >
               planet.tutors@gmail.com
             </Link>
