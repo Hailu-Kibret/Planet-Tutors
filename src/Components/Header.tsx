@@ -80,7 +80,7 @@ function Header() {
           type="submit"
           className="flex justify-center bg-blue-500 p-2 rounded button-solid"
         >
-          <Link className="text-white no-underline" to="/Signin">
+          <Link className="text-white no-underline" to="/SignInPage">
             Sign in
           </Link>
         </button>
