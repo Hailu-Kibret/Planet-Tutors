@@ -3,7 +3,7 @@ function Contact() {
     <section className="bg-gray-100 py-12">
       <div className="container mx-auto text-center">
         <div className="flex justify-center">
-          <h2 className="text-3xl font-bold text-blue-600 text-center mb-6 border-b-2 border-blue-600 pb-2 rounded">
+          <h2 className="text-3xl font-bold text-blue-600 text-center mb-6 border-b-4 border-blue-600 pb-2 inline-block rounded">
             Contact Us
           </h2>
         </div>

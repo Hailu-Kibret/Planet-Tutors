@@ -3,7 +3,7 @@ function Choose() {
     <section className="py-10 bg-white ">
       {/* Section Title */}
       <div className="flex justify-center">
-        <h2 className="inline-block text-3xl font-bold text-blue-600 text-center mb-6 border-b-4 border-blue-600 pb-2">
+        <h2 className="inline-block text-3xl font-bold text-blue-600 text-center mb-6 border-b-4 border-blue-600 pb-2 rounded">
           Why Choose Planet Tutors?
         </h2>
       </div>
@@ -44,7 +44,7 @@ function Choose() {
               key={index}
               className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
-              <h3 className="text-xl font-semibold text-blue-600 mb-3">
+              <h3 className="text-xl font-semibold text-center text-blue-600 mb-3">
                 {feature.title}
               </h3>
               <p className="text-gray-700 leading-relaxed">

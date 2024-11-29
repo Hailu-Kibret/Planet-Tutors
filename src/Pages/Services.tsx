@@ -2,7 +2,7 @@ function Services() {
   return (
     <section className=" py-12  bg-gray-100">
       <div className="flex justify-center">
-        <h1 className="text-3xl font-bold text-blue-600 text-center mb-6 border-b-2 border-blue-600 pb-2 rounded">
+        <h1 className="text-3xl font-bold text-blue-600 text-center mb-6 border-b-4 border-blue-600 pb-2 rounded">
           Our Tutoring Services
         </h1>
       </div>

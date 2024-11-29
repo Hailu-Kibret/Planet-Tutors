@@ -5,7 +5,7 @@ const About: React.FC = () => {
     <section className="bg-gray-50 py-10 px-6 md:px-12 lg:px-20">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-center">
-          <h2 className="text-3xl font-bold text-blue-600 text-center mb-6 border-b-2 border-blue-600 pb-2 rounded">
+          <h2 className="text-3xl font-bold text-blue-600 text-center mb-6 border-b-4 border-blue-600 pb-2 rounded">
             About Us
           </h2>
         </div>

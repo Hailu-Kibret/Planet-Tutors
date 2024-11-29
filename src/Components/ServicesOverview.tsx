@@ -8,7 +8,7 @@ function ServicesOverview() {
     <section className="py-12 bg-gray-100">
       {/* Section Title */}
       <div className="flex justify-center">
-        <h2 className="text-3xl font-bold text-blue-600 text-center mb-6 border-b-4 border-blue-600 pb-2">
+        <h2 className="text-3xl font-bold text-blue-600 text-center mb-6 border-b-4 border-blue-600 pb-2 inline-block rounded">
           Our Tutoring Services
         </h2>
       </div>
