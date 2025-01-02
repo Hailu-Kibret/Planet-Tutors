@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   const date = new Date();
+  const scrollToTop = (): void => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <footer className="bg-gray-800 text-white py-8 px-4">
@@ -23,22 +26,38 @@ function Footer() {
           </h3>
           <ul>
             <li>
-              <Link to="/" className="text-gray-400 hover:text-white">
+              <Link
+                to="/"
+                className="text-gray-400 hover:text-white"
+                onClick={scrollToTop}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/About" className="text-gray-400 hover:text-white">
+              <Link
+                to="/AboutUs"
+                className="text-gray-400 hover:text-white"
+                onClick={scrollToTop}
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/Services" className="text-gray-400 hover:text-white">
+              <Link
+                to="/OurServices"
+                className="text-gray-400 hover:text-white"
+                onClick={scrollToTop}
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link to="/Contact" className="text-gray-400 hover:text-white">
+              <Link
+                to="/Contact"
+                className="text-gray-400 hover:text-white"
+                onClick={scrollToTop}
+              >
                 Contact
               </Link>
             </li>

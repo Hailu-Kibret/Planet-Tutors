@@ -13,7 +13,7 @@ function CallToAction() {
           now to get started!
         </p>
         <button type="submit" className="button-solid">
-          <Link className="no-underline" to="/signup">
+          <Link className="no-underline" to="/SignUpPage">
             Sign Up Now
           </Link>
         </button>

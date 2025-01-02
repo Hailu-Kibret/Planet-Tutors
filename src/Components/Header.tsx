@@ -26,16 +26,22 @@ function Header() {
 
   return (
     <div className="flex flex-col ">
-      <div className="bg-tealCustom text-center w-full fixed-element">
-        <h3 className="text-lg font-bold text-white p-2 ">
+      <div className="  bg-tealCustom text-center w-full fixed-element">
+        {/* <h3>
+          <Link to="/tutors">Find Tutor</Link>
+        </h3> */}
+        <h3 className="text-lg font-bold text-center text-white p-2 ">
           <span className="animated-text">Call Us Now:</span> 09-39-21-49-32
         </h3>
+        {/* <h3>
+          <Link to="/tutors">Jobs posted</Link>
+        </h3> */}
       </div>
       {/* Main Header */}
       <div className="flex items-center justify-between bg-gray-800 text-white p-6 mt-8">
         {/* Logo */}
         <div>
-          <Link className="no-underline" to="/Home">
+          <Link className="no-underline" to="/">
             <img src={logo} width={150} alt="Planet Tutors" />
           </Link>
         </div>
@@ -93,7 +99,7 @@ function Header() {
             ].map((item, index) => (
               <li key={index}>
                 <NavLink
-                  to={`/${item.replace(/\s+/g, "")}`}
+                  to={item === "Home" ? "/" : `/${item.replace(/\s+/g, "")}`} // Check if it's "Home"
                   className={({ isActive }) =>
                     isActive ? "border-2 border-white p-2 rounded" : "p-2"
                   }
@@ -144,7 +150,7 @@ function Header() {
           ].map((item, index) => (
             <li key={index} className="w-full">
               <NavLink
-                to={`/${item.replace(/\s+/g, "")}`}
+                to={item === "Home" ? "/" : `/${item.replace(/\s+/g, "")}`}
                 className={({ isActive }) =>
                   isActive
                     ? "block w-full border-2 border-white p-2 rounded text-center"

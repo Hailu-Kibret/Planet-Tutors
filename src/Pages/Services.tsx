@@ -1,27 +1,19 @@
 function Services() {
   return (
-    <section className=" py-12  bg-gray-100">
+    <section className="py-12 bg-gray-100">
       <div className="flex justify-center">
         <h1 className="text-3xl font-bold text-blue-600 text-center mb-6 border-b-4 border-blue-600 pb-2 rounded">
           Our Tutoring Services
         </h1>
       </div>
 
-      <p className="text-lg text-center mb-6">
+      <p className="text-lg text-center px-4 mb-6">
         At Planet Tutors, we offer a range of educational services tailored to
         meet the unique needs of each student.
       </p>
-      <div className="grid grid-cols-2 gap-4   mx-auto max-w-screen-xl ">
-        <div className="  text-center min-h-30  bg-white p-6 rounded-lg shadow  ml-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 mx-auto max-w-screen-xl">
+        <div className="text-center min-h-30 bg-white p-6 rounded-lg shadow">
           <h3 className="mb-2">Home to Home Tutoring</h3>
-          {/* <div className="flex justify-center mb-4 md:mb-6 lg:mb-8">
-          <img
-            src={HomeImage}
-            width={220}
-            height={220}
-            alt="Home to home tutoring "
-          />
-        </div> */}
           <p className="mb-4 text-justify">
             Our home tutoring service provides personalized, one-on-one support
             for your children, directly at your location. Our tutors are
@@ -30,19 +22,10 @@ function Services() {
             skilled at making concepts easy to understand. If you have any
             concerns about your child's progress, you can cancel the service
             within the first week at no cost.
-          </p>{" "}
+          </p>
         </div>
-        <div className="  text-center min-h-30  bg-white p-6 rounded-lg shadow  mr-4">
+        <div className="text-center min-h-30 bg-white p-6 rounded-lg shadow">
           <h3 className="mb-2">Online Tutoring</h3>
-          {/* <div className="flex justify-center mb-4 md:mb-6 lg:mb-8 w-full">
-          <img
-            src={onlineImage}
-            width={220}
-            height={220}
-            alt="Online Tutoring"
-          />{" "}
-        </div> */}
-
           <p className="mb-4 text-justify">
             Additionally, we offer online tutoring services, available as
             one-on-one sessions or group classes. For group sessions, the cost
@@ -56,17 +39,8 @@ function Services() {
             involved.
           </p>
         </div>
-        <div className="  text-center min-h-30  bg-white p-6 rounded-lg shadow  ml-4">
+        <div className="text-center min-h-30 bg-white p-6 rounded-lg shadow">
           <h3 className="mb-2">MPC MasterClass</h3>
-          {/* <div className="flex justify-center mb-4 md:mb-6 lg:mb-8">
-          <img
-            src={mpcImage}
-            width={220}
-            height={220}
-            alt="MPC MasterClass"
-          />
-        </div> */}
-
           <p className="mb-4 text-justify">
             We also offer a specialized service called MPC MasterClass, an
             online and on-site tutoring program focused exclusively on
@@ -77,17 +51,8 @@ function Services() {
             help students succeed in these courses.
           </p>
         </div>
-        <div className="  text-center min-h-30  bg-white p-6 rounded-lg shadow  mr-4">
+        <div className="text-center min-h-30 bg-white p-6 rounded-lg shadow">
           <h3 className="mb-2">One Time Service</h3>
-          {/* <div className="flex justify-center mb-4 md:mb-6 lg:mb-8">
-          <img
-            src={oneImage}
-            width={220}
-            height={220}
-            alt="One time service"
-          />
-        </div> */}
-
           <p className="mb-4 text-justify">
             Lastly, we offer a one-time tutoring service designed to help
             students with specific topics, homework, assignments, or any
@@ -101,7 +66,7 @@ function Services() {
         </div>
       </div>
       <div>
-        <p className="text-lg text-center mt-6">
+        <p className="text-lg text-center px-4 mt-6">
           Join us at Planet Tutors, where we strive to provide exceptional
           tutoring services that empower students to reach their full potential.
         </p>
